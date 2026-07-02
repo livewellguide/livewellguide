@@ -11,64 +11,190 @@
 
 <style>
 
-.review{
-max-width:1000px;
-margin:auto;
-padding:60px 8%;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
 }
 
-.review h1{
-font-size:42px;
-margin-bottom:20px;
+body{
+background:#f5f7fb;
+color:#222;
+line-height:1.7;
 }
 
-.review h2{
-margin-top:45px;
-margin-bottom:15px;
+header{
+background:#fff;
+padding:22px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 2px 15px rgba(0,0,0,.08);
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo{
+font-size:32px;
+font-weight:bold;
 color:#1b8f4c;
 }
 
-.review p{
-font-size:18px;
-line-height:1.8;
-margin-bottom:20px;
+nav a{
+text-decoration:none;
+color:#222;
+font-weight:600;
+margin-left:35px;
 }
 
-.cta{
+nav a:hover{
+color:#1b8f4c;
+}
+
+.container{
+max-width:1100px;
+margin:auto;
+padding:60px 25px;
+}
+
+.rating{
+background:#fff;
+padding:18px;
+border-radius:12px;
+box-shadow:0 8px 25px rgba(0,0,0,.08);
+margin-bottom:35px;
+font-size:18px;
+color:#555;
+}
+
+.hero{
+display:grid;
+grid-template-columns:1fr 420px;
+gap:60px;
+align-items:center;
+margin-bottom:70px;
+}
+
+.hero img{
+width:100%;
+border-radius:18px;
+box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+
+h1{
+font-size:52px;
+line-height:1.2;
+margin-bottom:25px;
+}
+
+.subtitle{
+font-size:21px;
+margin-bottom:30px;
+color:#555;
+}
+
+.button{
 display:inline-block;
 background:#1b8f4c;
 color:white;
-padding:18px 40px;
-text-decoration:none;
+padding:18px 38px;
 font-size:20px;
 font-weight:bold;
+text-decoration:none;
 border-radius:10px;
-margin:30px 0;
+transition:.3s;
 }
 
-.cta:hover{
-background:#16753e;
+.button:hover{
+background:#15753d;
+transform:translateY(-2px);
+}
+
+.card{
+background:white;
+padding:40px;
+border-radius:18px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+margin-bottom:40px;
+}
+
+.card h2{
+color:#1b8f4c;
+margin-bottom:20px;
+font-size:34px;
+}
+
+.card p{
+font-size:19px;
+margin-bottom:18px;
+}
+
+.proscons{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:25px;
+margin-top:30px;
 }
 
 .box{
-background:white;
 padding:30px;
-border-radius:12px;
-box-shadow:0 5px 20px rgba(0,0,0,.08);
-margin-top:30px;
+border-radius:15px;
 }
 
-ul{
-padding-left:25px;
-line-height:2;
+.pros{
+background:#eefaf2;
+}
+
+.cons{
+background:#fff3f3;
+}
+
+.box h3{
+margin-bottom:18px;
+font-size:28px;
+}
+
+.box ul{
+padding-left:20px;
+}
+
+.box li{
+margin-bottom:12px;
 font-size:18px;
 }
 
-.warning{
-background:#fff7e6;
-padding:20px;
-border-left:5px solid orange;
-margin-top:30px;
+.review-box{
+background:#fff;
+padding:30px;
+border-left:6px solid #1b8f4c;
+margin-bottom:25px;
+border-radius:12px;
+}
+
+footer{
+background:#111;
+color:white;
+padding:40px;
+text-align:center;
+margin-top:80px;
+}
+
+@media(max-width:900px){
+
+.hero{
+grid-template-columns:1fr;
+}
+
+h1{
+font-size:38px;
+}
+
+nav{
+display:none;
+}
+
 }
 
 </style>
@@ -84,124 +210,62 @@ LiveWellGuide
 </div>
 
 <nav>
+
 <a href="index.html">Home</a>
+
 <a href="#">Reviews</a>
+
+<a href="#">Health</a>
+
 <a href="#">Contact</a>
+
 </nav>
 
 </header>
 
-<div class="review">
+<div class="container">
 
-<h1>SlimLeaf Review 2026: Does It Really Work?</h1>
-  
-<div style="margin:20px 0;font-size:18px;color:#555;">
-⭐⭐⭐⭐⭐  <strong>4.8/5 Rating</strong><br>
+<div class="rating">
+
+★★★★★ <strong>4.8/5 Rating</strong><br><br>
+
 Reviewed by our Health Editorial Team<br>
+
 Last Updated: July 2026
+
 </div>
-<p>
-SlimLeaf is one of the newest natural weight-loss supplements attracting attention in the United States.
-This review explains how it works, its ingredients, benefits, and whether it's worth buying.
+
+<div class="hero">
+
+<div>
+
+<h1>
+SlimLeaf Review 2026:
+Does It Really Work?
+</h1>
+
+<p class="subtitle">
+
+SlimLeaf has become one of the fastest-growing natural weight-loss supplements in the United States.
+
+In this review we analyze its ingredients, benefits, side effects, customer feedback and whether it is worth buying.
+
 </p>
 
-<a class="cta"
+<a class="button"
 href="https://www.checkout-ds24.com/redir/670021/livewellguide/"
 target="_blank">
-Check Official Website
+
+Visit Official Website →
+
 </a>
 
-<div class="box">
+</div>
 
-<h2>What is SlimLeaf?</h2>
+<div>
 
-<p>
-SlimLeaf is a dietary supplement designed to support healthy weight management, reduce cravings,
-increase energy levels and improve metabolism using natural ingredients.
-</p>
+<img src="WhatsApp Image 2026-07-02 at 10.34.08.jpeg">
 
 </div>
 
-<div class="box">
-
-<h2>Main Benefits</h2>
-
-<ul>
-
-<li>Supports healthy fat burning</li>
-
-<li>May reduce appetite naturally</li>
-
-<li>Boosts daily energy</li>
-
-<li>Easy capsules</li>
-
-<li>Natural ingredients</li>
-
-<li>Made in certified facilities</li>
-
-</ul>
-
 </div>
-
-<div class="box">
-
-<h2>Pros</h2>
-
-<ul>
-
-<li>Natural Formula</li>
-
-<li>Made in USA</li>
-
-<li>60-Day Guarantee</li>
-
-<li>Simple Daily Use</li>
-
-</ul>
-
-</div>
-
-<div class="box">
-
-<h2>Cons</h2>
-
-<ul>
-
-<li>Only available online</li>
-
-<li>Results vary by individual</li>
-
-</ul>
-
-</div>
-
-<div class="warning">
-
-<strong>Disclaimer:</strong>
-
-This review is provided for informational purposes only and should not replace professional medical advice.
-
-</div>
-
-<center>
-
-<a class="cta"
-href="https://www.checkout-ds24.com/redir/670021/livewellguide/"
-target="_blank">
-Visit Official Website
-</a>
-
-</center>
-
-</div>
-
-<footer>
-
-© 2026 LiveWellGuide
-
-</footer>
-
-</body>
-
-</html>
