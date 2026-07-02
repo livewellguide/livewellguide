@@ -174,3 +174,29 @@ grid-template-columns:1fr;
 }
 
 }
+.review-meta{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    gap:12px;
+    margin:20px 0 30px;
+    padding:18px 22px;
+    background:#fff;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    font-size:15px;
+    color:#555;
+}
+
+.review-meta .stars{
+    color:#f4b400;
+    font-size:20px;
+}
+
+.review-meta strong{
+    color:#222;
+}
+
+.review-meta .dot{
+    color:#bbb;
+}
