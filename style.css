@@ -90,7 +90,15 @@ h1{
 .cta:hover{
     background:#15753d;
 }
+.cta{
+    transition:all .3s ease;
+    box-shadow:0 10px 25px rgba(27,191,76,.30);
+}
 
+.cta:hover{
+    transform:translateY(-2px);
+    box-shadow:0 15px 35px rgba(27,191,76,.40);
+}
 .content-card{
     background:#fff;
     padding:35px;
