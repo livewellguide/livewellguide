@@ -17,6 +17,27 @@ body{
 h1{
     color:#2c7a2c;
 }
+input, textarea{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:16px;
+    box-sizing:border-box;
+}
+button{
+    background:#2c7a2c;
+    color:white;
+    border:none;
+    padding:14px 28px;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:16px;
+}
+button:hover{
+    opacity:.9;
+}
 a{
     color:#2c7a2c;
 }
@@ -26,13 +47,27 @@ a{
 
 <body>
 
-<h1>Contact</h1>
+<h1>Contact Us</h1>
 
-<p>If you have any questions regarding this website, please contact us at:</p>
+<p>If you have any questions, please send us a message.</p>
 
-<p><strong>Email:</strong> contact@livewellguide.com</p>
+<form action="https://formsubmit.co/livewellguide.contact@gmail.com" method="POST">
 
-<p>We will respond as soon as possible.</p>
+<input type="hidden" name="_captcha" value="false">
+
+<input type="hidden" name="_subject" value="New message from LiveWellGuide">
+
+<input type="text" name="Name" placeholder="Your Name" required>
+
+<input type="email" name="Email" placeholder="Your Email" required>
+
+<textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
+
+<br>
 
 <p><a href="index.html">← Return to Home</a></p>
 
