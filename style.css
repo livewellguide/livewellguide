@@ -260,3 +260,46 @@ grid-template-columns:1fr;
     border-radius:18px;
     box-shadow:0 10px 30px rgba(0,0,0,.15);
 }
+.pros-cons{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+    margin-top:25px;
+}
+
+.pros,
+.cons{
+    background:#f8f9fa;
+    padding:25px;
+    border-radius:15px;
+}
+
+.pros h3{
+    color:#28a745;
+}
+
+.cons h3{
+    color:#dc3545;
+}
+
+.pros ul,
+.cons ul{
+    padding-left:20px;
+}
+
+.rating-table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+.rating-table td,
+.rating-table th{
+    padding:14px;
+    border-bottom:1px solid #eee;
+    text-align:left;
+}
+
+.rating-table tr:hover{
+    background:#fafafa;
+}
