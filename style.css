@@ -252,3 +252,11 @@ grid-template-columns:1fr;
     margin-bottom:12px;
     line-height:1.6;
 }
+.product-image{
+    display:block;
+    max-width:280px;
+    width:100%;
+    margin:30px auto;
+    border-radius:18px;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
